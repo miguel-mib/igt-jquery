@@ -1,1 +1,1 @@
-# [pages](https://github.com/miguel-mib/igt-jquery).
+# [pages](https://miguel-mib.github.io/igt-jquery/).
