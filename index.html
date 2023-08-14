@@ -1,0 +1,50 @@
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Entrar</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  </head>
+  <body>
+    <div class="entrar__wrapper">
+      <figure>
+        <img src="./assets/logo.svg" alt="IGT_Logo" />
+      </figure>
+      <div class="entrar__section">
+        <h1>Entrar</h1>
+        <form class="entrar__form">
+          <div class="controls">
+            <div class="control">
+              <input
+                type="text"
+                id="voucher"
+                class="voucher_input"
+                placeholder="VOUCHER"
+              />
+            </div>
+            <button type="submit">ENTRAR</button>
+            <p class="form__error">Voucher inválido.</p>
+            <!-- QUANDO O VOUCHER FOR INVALIDO E O ENVIOU DER ERRO, COLOCA A CLASSE "show" NESSE <p>
+            VOUCHER DEVE TER PELO MENOS 8 CARACTERES -->
+          </div>
+        </form>
+        <a
+          class="button__ig"
+          href="https://www.instagram.com/ifes.gottalent/"
+          target="_blank"
+          rel="noopener"
+        >
+          <img src="./assets/instagram-colored.svg" alt="INSTAGRAM_Logo" />
+        </a>
+      </div>
+      <div class="button__participar">
+        <a href="/cadastro">
+          <button type="button">Inscrever-se</button>
+        </a>
+      </div>
+      <p class="cr">IGT © 2023</p>
+    </div>
+  </body>
+  <script src="index.js"></script>
+</html>

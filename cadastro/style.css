@@ -1,0 +1,288 @@
+body {
+  background: linear-gradient(to left, #a55ffc, #7d2cde);
+  margin: 0;
+  padding: 0;
+  font: 1rem "Mont-serrat", sans-serif;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+.inscrever__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+.inscrever__wrapper img {
+  width: 7.5rem;
+}
+
+.inscrever__section {
+  background-color: #ffffff;
+  border-radius: 0.3125rem;
+  padding: 2rem 3rem;
+  min-height: 18.75rem;
+  -webkit-box-shadow: 10px 10px 40px -12px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 40px -12px rgba(0, 0, 0, 0.75);
+  box-shadow: 10px 10px 40px -12px rgba(0, 0, 0, 0.75);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+.inscrever__section h1 {
+  margin: 0;
+  color: #333333;
+}
+
+.cr {
+  color: #fff;
+  font-size: 0.75rem;
+}
+
+.button__entrar {
+  width: 9.375rem;
+}
+.button__entrar button {
+  background: #333333;
+  font-weight: 600;
+  color: #ffffff;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  border-radius: 1.875rem;
+  padding: 0.75rem 0;
+  width: 100%;
+  -webkit-box-shadow: 10px 10px 40px -12px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 40px -12px rgba(0, 0, 0, 0.75);
+  box-shadow: 10px 10px 40px -12px rgba(0, 0, 0, 0.75);
+}
+
+.controls {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+}
+.controls button {
+  background: linear-gradient(-45deg, #6c3ea5, #7e63e1, #6e19d6, #a861ff);
+  background-size: 400% 400%;
+  font-weight: 600;
+  color: #ffffff;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  border-radius: 1.875rem;
+  padding: 0.75rem 0;
+  width: 100%;
+  -webkit-box-shadow: 10px 10px 40px -12px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 40px -12px rgba(0, 0, 0, 0.75);
+  box-shadow: 10px 10px 40px -12px rgba(0, 0, 0, 0.75);
+}
+
+.control,
+.links {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.25rem;
+}
+.control *,
+.links {
+  transition: 300ms;
+}
+
+.control .title {
+  font-weight: bold;
+}
+.control .input-error {
+  border: 0.125rem solid #c23434;
+  color: #c23434;
+  transition: 300ms;
+}
+
+.control textarea {
+  padding: 0.5rem 0.5rem;
+  min-height: 2.0625rem;
+  width: 12.6875rem;
+  border-radius: 0.3125rem;
+  border: 0.0625rem solid #d1d1d1;
+  background-color: #e7e7e7;
+  font-family: inherit;
+  outline: none;
+  font-size: 12px;
+  resize: none;
+}
+.control textarea::-webkit-input-placeholder {
+  color: #b8b8b8;
+  font-weight: 600;
+  transition: 300ms;
+}
+.control textarea:focus::-webkit-input-placeholder {
+  transition: 300ms;
+  color: #ffffff00;
+}
+.control input {
+  padding: 0 0.5rem;
+  height: 2.0625rem;
+  width: 12.6875rem;
+  border-radius: 0.3125rem;
+  outline: none;
+  border: 0.0625rem solid #d1d1d1;
+  background-color: #e7e7e7;
+}
+.control input::-webkit-input-placeholder {
+  color: #b8b8b8;
+  font-weight: 600;
+  transition: 300ms;
+}
+.control input:focus::-webkit-input-placeholder {
+  transition: 300ms;
+  color: #ffffff00;
+}
+.control .input__foto {
+  display: none;
+}
+.control .label__foto {
+  padding: 0 0.5rem;
+  min-height: 2.0625rem;
+  width: 11.5625rem;
+  border-radius: 0.3125rem;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  border: 0.0625rem solid #d1d1d1;
+  background-color: #e7e7e7;
+  color: #b8b8b8;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.control .label__foto.input-error {
+  border: 0.0625rem solid #fc1532;
+  transition: 300ms;
+}
+.control .label__foto.opened {
+  color: black;
+  font-weight: 500;
+}
+
+.control select {
+  border: 0.0625rem solid #d1d1d1;
+  background-color: #e7e7e7;
+  border-radius: 0.3125rem;
+  padding: 0 0.5rem;
+  height: 2.1875rem;
+  width: 12.6875rem;
+  font-weight: 600;
+  color: #b8b8b8;
+  outline: none;
+  cursor: pointer;
+}
+.control select.opened {
+  font-weight: 500;
+  color: black;
+}
+.control select option {
+  color: #b8b8b8;
+}
+
+.control__links .links-wrapper {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.control__equipe .integrantes {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.control__equipe .integrantes-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.control__equipe .integrantes-wrapper .buttons__wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.control__links .links-wrapper input {
+  width: 10rem;
+}
+
+.control__links .last input {
+  width: 7.3125rem;
+}
+
+.control__links .links-wrapper .delete-btn,
+.control__equipe .integrantes-wrapper .delete-btn {
+  background: #c23434;
+  width: 2.0625rem;
+  height: 2.0625rem;
+  border-radius: 0.625rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.control__links .links-wrapper button svg,
+.control__equipe .integrantes-wrapper .delete-btn svg {
+  filter: invert(93%) sepia(0%) saturate(959%) hue-rotate(123deg)
+    brightness(118%) contrast(100%);
+  height: 1.5625rem;
+}
+
+.control__links .links-wrapper .add-btn,
+.control__equipe .integrantes-wrapper .add-btn {
+  background: #333333;
+  color: #fff;
+  border: none;
+  width: 2.0625rem;
+  height: 2.0625rem;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.control__equipe .integrantes .buttons__wrapper .delete-btn {
+  width: 100%;
+  background: #c23434;
+}
+
+.control__equipe .integrantes .buttons__wrapper .delete-btn svg {
+  filter: invert(93%) sepia(0%) saturate(959%) hue-rotate(123deg)
+    brightness(118%) contrast(100%);
+}
+
+.control__equipe .last .buttons__wrapper .delete-btn,
+.control__equipe .last .buttons__wrapper .add-btn {
+  width: 47.5%;
+}
+
+.control__links .default-add-btn,
+.control__equipe .default-add-btn {
+  background: #333333;
+  width: 12rem;
+  margin: 0.5rem 0 0.25rem 0;
+}
+
+.erro {
+  display: none;
+  margin: 0.2rem auto 0.2rem;
+  color: #c23434;
+}
+.erro.show {
+  display: block;
+}

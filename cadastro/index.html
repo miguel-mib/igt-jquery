@@ -1,0 +1,104 @@
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <title>Cadastro</title>
+  </head>
+  <body>
+    <div class="inscrever__wrapper">
+      <img src="../assets/logo.svg" alt="IGT_Logo" />
+      <div class="inscrever__section">
+        <h1>Inscrição</h1>
+        <form>
+          <div class="controls">
+            <div class="control">
+              <span class="title">Representante</span>
+              <input
+                type="text"
+                id="nome"
+                placeholder="Nome completo"
+                class="form-input"
+              />
+              <input
+                type="tel"
+                id="telefone"
+                placeholder="Telefone"
+                class="form-input"
+              />
+              <select title="turma" class="form-input">
+                <option value="" disabled hidden selected>Turma</option>
+                <option value="01">M01</option>
+                <option value="02">M02</option>
+                <option value="03">M03</option>
+                <option value="05">M05</option>
+                <option value="06">M06</option>
+                <option value="07">M07</option>
+                <option value="08">M08</option>
+                <option value="09">M09</option>
+                <option value="10">M10</option>
+                <option value="11">M11</option>
+                <option value="12">M12</option>
+                <option value="13">M13</option>
+                <option value="14">M14</option>
+                <option value="15">M15</option>
+                <option value="16">M16</option>
+                <option value="17">M17</option>
+              </select>
+              <label for="foto" class="label__foto"
+                >Foto - Preferencialmente 3x4
+              </label>
+              <input
+                type="file"
+                placeholder="Foto"
+                id="foto"
+                class="input__foto form-input"
+                accept="image/*"
+              />
+            </div>
+            <div class="control control__equipe">
+              <span class="title">Equipe</span>
+              <div class="integrantes"></div>
+            </div>
+            <div class="control">
+              <span class="title">Apresentação</span>
+              <select title="categoria" class="form-input">
+                <option value="" disabled hidden selected>Categoria</option>
+                <option value="0">Música</option>
+                <option value="1">Dança</option>
+                <option value="2">Artes visuais</option>
+                <option value="3">Stand Up</option>
+                <option value="4">Poesia</option>
+                <option value="5">Mágica</option>
+                <option value="6">Outros</option>
+              </select>
+              <textarea
+                type="text"
+                id="exp"
+                placeholder="Resume sua apresentação"
+                class="form-input"
+              ></textarea>
+              <div class="control control__links">
+                <div class="links"></div>
+              </div>
+            </div>
+
+            <p class="erro">Formulário inválido.</p>
+            <button type="submit">ENVIAR</button>
+          </div>
+        </form>
+      </div>
+      <div class="button__entrar">
+        <a href="/">
+          <button type="button">Entrar</button>
+        </a>
+      </div>
+      <p class="cr">IGT © 2023</p>
+    </div>
+  </body>
+  <script src="renderLinks.js"></script>
+  <script src="renderIntegrantes.js"></script>
+  <script src="index.js"></script>
+  <script></script>
+</html>
