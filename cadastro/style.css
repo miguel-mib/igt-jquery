@@ -102,11 +102,6 @@ body::-webkit-scrollbar {
 .control .title {
   font-weight: bold;
 }
-.control .input-error {
-  border: 0.125rem solid #c23434;
-  color: #c23434;
-  transition: 300ms;
-}
 
 .control textarea {
   padding: 0.5rem 0.5rem;
@@ -164,12 +159,12 @@ body::-webkit-scrollbar {
   font-size: 12px;
   font-weight: 600;
   cursor: pointer;
+
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
-.control .label__foto.input-error {
-  border: 0.0625rem solid #fc1532;
-  transition: 300ms;
-}
 .control .label__foto.opened {
   color: black;
   font-weight: 500;
@@ -285,4 +280,15 @@ body::-webkit-scrollbar {
 }
 .erro.show {
   display: block;
+}
+
+.control .input-error,
+.control .label__foto .input-error {
+  border: 0.125rem solid #fc1532;
+  color: #fc1532;
+  transition: 500ms;
+}
+
+.control .input-error::-webkit-input-placeholder {
+  color: #fc1532;
 }

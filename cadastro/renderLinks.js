@@ -63,11 +63,10 @@ $(document).ready(function () {
   }
 
   function appendLink() {
-    const index = links.length;
     const $input = $("<input>")
       .attr("type", "url")
       .attr("placeholder", "Link")
-      .attr("name", "link")
+      .attr("name", "link-input")
       .on("blur", onBlurHandle)
       .addClass("form-input");
 
