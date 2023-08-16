@@ -15,11 +15,11 @@
 }
 
 .pedidos-atalho a {
-  background: #74767e;
+  background: #50535c;
 }
 
 .pedidos-atalho .ativo {
-    background: #50535c;
+  text-decoration: underline;
 }
 
 .pedidos-atalho a:hover {
