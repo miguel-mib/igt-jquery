@@ -81,8 +81,7 @@ body::-webkit-scrollbar {
 }
 
 .controls button {
-  background: linear-gradient(-45deg, #6c3ea5, #7e63e1, #6e19d6, #a861ff);
-  background-size: 400% 400%;
+  background: linear-gradient(to right, #a55ffc, #7d2cde);
   font-weight: 600;
   color: #ffffff;
   cursor: pointer;

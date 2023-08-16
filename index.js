@@ -16,7 +16,7 @@ $(document).ready(function () {
   //REMOVER TUDO QUE TA AQUI
   $("form").submit(function (e) {
     e.preventDefault();
-    $(location).attr("href", "/admin/index.html");
+    $(location).attr("href", "./admin/index.html");
   });
   //ATE AQUI
 });

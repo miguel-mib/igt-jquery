@@ -2,12 +2,16 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" href="/assets/logo.svg" type="image/x-icon" />
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="/admin/navbar.css" />
-    <title>Pedidos</title>
+    <link
+      rel="shortcut icon"
+      href="../../assets/logo.svg"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="../navbar.css" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Admin - Pedidos</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-    <script src="/admin/navbar.js"></script>
+    <script src="../navbar.js"></script>
   </head>
   <body>
     <header class="header">
@@ -15,22 +19,24 @@
         <div class="hamb"></div>
       </div>
       <figure class="header-figure">
-        <img src="/assets/logo.svg" alt="logo" />
+        <img src="../../assets/logo.svg" alt="logo" />
       </figure>
       <nav class="nav">
-        <a href="/admin/index.html"><span>Home</span></a>
-        <a href="/admin/pedidos/index.html" class="aberto"
-          ><span>Pedidos</span></a
-        >
-        <a href="/admin/votos/index.html"><span>Votos</span></a>
-        <a href="/admin/gerencia/index.html"><span>Gerência</span></a>
-        <a href="/admin/gerador/index.html"><span>Gerador</span></a>
-        <a href="/index.html"><span>Entrar</span></a>
+        <a href="../index.html"><span>Home</span></a>
+        <a href="../pedidos/index.html" class="aberto"><span>Pedidos</span></a>
+        <div class="pedidos-atalho">
+          <a href="#pendentes" class="ativo"><span>Pendentes</span></a>
+          <a href="#aceitos"><span>Aceitos</span></a>
+        </div>
+        <a href="../votos/index.html"><span>Votos</span></a>
+        <a href="../gerencia/index.html"><span>Gerência</span></a>
+        <a href="../gerador/index.html"><span>Gerador</span></a>
+        <a href="../../index.html"><span>Entrar</span></a>
       </nav>
     </header>
     <main class="main">
       <section class="main-section">
-        <section class="pedidos-pendentes">
+        <section class="pedidos pedidos-pendentes" id="pendentes">
           <h1>Pedidos pendentes</h1>
           <div class="lista-pedidos">
             <div class="card">
@@ -201,9 +207,65 @@
                 <button type="button" class="botao-recusar">Recusar</button>
               </div>
             </div>
+            <div class="card">
+              <div class="card-representante">
+                <p class="title">Representante</p>
+                <p><b>Nome: </b> Miguel Migliorelli Bringhenti</p>
+                <p>
+                  <b>Telefone: </b> <a href="tel:+1234567890">27 99647-5223</a>
+                </p>
+                <p><b>Turma: </b> M08</p>
+              </div>
+              <div class="card-apresentacao">
+                <p class="title">Apresentação</p>
+                <p><b>Categoria: </b> Dança</p>
+                <p>
+                  <b>Resumo: </b>
+                  Somos um trio apaixonado por K-pop, trazendo uma performance
+                  de dança vibrante e sincronizada. Com movimentos cativantes e
+                  energia contagiante, vamos encantar o palco do show de
+                  talentos e compartilhar a magia do K-pop com todos.
+                </p>
+                <ul class="card-links">
+                  <li>
+                    <a href="https://www.youtube.com/watch?v=gdZLi9oWNZg"
+                      >https://www.youtube.com/watch?v=gdZLi9oWNZg</a
+                    >
+                  </li>
+                  <li>
+                    <a href="https://www.youtube.com/watch?v=AkZNww9sj_E"
+                      >https://www.youtube.com/watch?v=AkZNww9sj_E</a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <div class="card-equipe">
+                <p class="title">Equipe</p>
+                <div class="integrante">
+                  <p><b>Nome: </b> Miguel Força Mariani</p>
+                  <p>
+                    <b>Telefone: </b>
+                    <a href="tel:+1234567890">27 99728-3678</a>
+                  </p>
+                  <p><b>Turma: </b> M08</p>
+                </div>
+                <div class="integrante">
+                  <p><b>Nome: </b> Pedro Henrique Jureveth</p>
+                  <p>
+                    <b>Telefone: </b>
+                    <a href="tel:+1234567890">27 99640-7583</a>
+                  </p>
+                  <p><b>Turma: </b> M08</p>
+                </div>
+              </div>
+              <div class="card-botoes">
+                <button type="button" class="botao-aceitar">Aceitar</button>
+                <button type="button" class="botao-recusar">Recusar</button>
+              </div>
+            </div>
           </div>
         </section>
-        <section class="pedidos-aceitos">
+        <section class="pedidos pedidos-aceitos" id="aceitos">
           <h1>Pedidos aceitos</h1>
           <div class="lista-pedidos">
             <div class="card">
@@ -367,5 +429,5 @@
       </section>
     </main>
   </body>
-  <script src="index.js"></script>
+  <script src="./index.js"></script>
 </html>
