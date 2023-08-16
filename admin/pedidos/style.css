@@ -26,6 +26,10 @@
   background: #454750;
 }
 
+.pedidos {
+  margin-bottom: 2rem;
+}
+
 .pedidos h1 {
   background: linear-gradient(to left, #a55ffc, #7d2cde);
   color: transparent;
