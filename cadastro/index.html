@@ -2,13 +2,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="/assets/logo.svg" type="image/x-icon" />
     <link rel="stylesheet" href="style.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
     <title>Cadastro</title>
   </head>
   <body>
     <div class="inscrever__wrapper">
-      <img src="../assets/logo.svg" alt="IGT_Logo" />
+      <img src="/assets/logo.svg" alt="IGT_Logo" />
       <div class="inscrever__section">
         <h1>Inscrição</h1>
         <form>
@@ -29,7 +30,11 @@
                 name="representante-tel-input"
                 class="form-input"
               />
-              <select title="turma" class="form-input" name="representante-turma-select">
+              <select
+                title="turma"
+                class="form-input"
+                name="representante-turma-select"
+              >
                 <option value="" disabled hidden selected>Turma</option>
                 <option value="01">M01</option>
                 <option value="02">M02</option>
@@ -66,7 +71,11 @@
             </div>
             <div class="control">
               <span class="title">Apresentação</span>
-              <select title="categoria" class="form-input" name="categoria-select">
+              <select
+                title="categoria"
+                class="form-input"
+                name="categoria-select"
+              >
                 <option value="" disabled hidden selected>Categoria</option>
                 <option value="0">Música</option>
                 <option value="1">Dança</option>
@@ -93,7 +102,7 @@
         </form>
       </div>
       <div class="button__entrar">
-        <a href="./../index.html">
+        <a href="/index.html">
           <button type="button">Entrar</button>
         </a>
       </div>

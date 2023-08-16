@@ -12,4 +12,11 @@ $(document).ready(function () {
       $(this).removeClass("error");
     }
   });
+
+  //REMOVER TUDO QUE TA AQUI
+  $("form").submit(function (e) {
+    e.preventDefault();
+    $(location).attr("href", "/admin/index.html");
+  });
+  //ATE AQUI
 });

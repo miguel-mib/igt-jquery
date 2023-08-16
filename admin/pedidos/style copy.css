@@ -1,0 +1,92 @@
+.section-line {
+  width: 100%;
+  margin: 6rem 0;
+  height: 2.5px;
+  background-color: #f4f5f4;
+}
+
+section h1 {
+  font-size: 28px;
+  text-decoration: underline #7d2cde;
+  text-align: center;
+  margin-bottom: 5rem;
+}
+
+.pendentes .wrapper,
+.aceitos .wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5rem;
+}
+
+.aceitos {
+  padding-bottom: 5rem;
+}
+
+.card {
+  border: 2.5px #e6e6e6 solid;
+  border-radius: 0.9375rem;
+  padding: 1rem;
+  width: 40rem;
+  -webkit-box-shadow: 5px 5px 40px -24px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 5px 5px 40px -24px rgba(0, 0, 0, 0.75);
+  box-shadow: 5px 5px 40px -24px rgba(0, 0, 0, 0.75);
+}
+
+.card .title {
+  font-size: 20px;
+  text-align: center;
+  text-decoration: underline #7d2cde;
+}
+
+.card .principal {
+  display: flex;
+  justify-content: space-around;
+  gap: 1rem;
+}
+
+.card .apresentacao .resumo {
+  word-wrap: break-word;
+  max-width: 20rem;
+}
+
+.card .equipe-wrapper {
+  display: grid;
+  place-items: center;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.card .integrante {
+  border-bottom: 1px solid #e6e6e6;
+}
+
+.card .integrante:nth-child(n):last-child {
+  border-bottom: none;
+}
+
+.card .botoes {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.card .botoes button {
+  background: #333333;
+  font-weight: 600;
+  color: #ffffff;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  border-radius: 1.875rem;
+  padding: 0.75rem 0;
+  width: 30%;
+  -webkit-box-shadow: 10px 10px 40px -12px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 40px -12px rgba(0, 0, 0, 0.75);
+  box-shadow: 10px 10px 40px -12px rgba(0, 0, 0, 0.75);
+}
+
+.card .botoes .aceitar {
+  background: linear-gradient(-45deg, #6c3ea5, #7e63e1, #6e19d6, #a861ff);
+  background-size: 400% 400%;
+}
