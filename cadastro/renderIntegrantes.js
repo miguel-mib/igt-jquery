@@ -175,7 +175,7 @@ $(document).ready(function () {
     $buttonsWrapper.append($botaoDelete);
 
     $.ajax({
-      url: "/assets/delete-icon.svg",
+      url: "../assets/delete-icon.svg",
       dataType: "text",
       success(svgContent) {
         $botaoDelete.html(svgContent);
