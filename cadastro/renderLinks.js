@@ -13,7 +13,9 @@ $(document).ready(function () {
     links.forEach((linkWrapper, index) => {
       const eUltimo = index === links.length - 1;
 
-      const $input = linkWrapper.find("input");
+      const $input = linkWrapper
+        .find("input")
+        .attr("name", `link-[${index}]`);
       $input.on("blur", onBlurHandle);
 
       const $botaoDelete = linkWrapper.find(".delete-btn");
@@ -63,12 +65,11 @@ $(document).ready(function () {
   }
 
   function appendLink() {
-    const $input = $("<input>")
-      .attr("type", "url")
-      .attr("placeholder", "Link")
-      .attr("name", "link-input")
-      .on("blur", onBlurHandle)
-      .addClass("form-input");
+    const $input = $("<input>", {
+      type: "url",
+      placeholder: "link",
+      class: "form-input",
+    }).on("blur", onBlurHandle);
 
     const $botaoDelete = $("<button>")
       .attr("type", "button")

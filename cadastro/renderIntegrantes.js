@@ -22,16 +22,19 @@ $(document).ready(function () {
 
       integranteWrapper
         .find('input[name="integrante-nome-input"]')
+        .attr("name", `integrante-[${index}]`)
         .on("blur", nomeOnBlurHandle)
         .on("input", nomeOnInputHandle);
 
       integranteWrapper
         .find('input[name="integrante-tel-input"]')
+        .attr("name", `integrante-[${index}]`)
         .on("blur", telOnBlurHandle)
         .on("input", telOnInputHandle);
 
       integranteWrapper
         .find('select[name="integrante-turma"]')
+        .attr("name", `integrante-[${index}]`)
         .on("blur", turmaOnBlurHadle)
         .on("change", turmaOnChangeHadle);
 
