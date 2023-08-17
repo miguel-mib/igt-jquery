@@ -3,11 +3,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" href="../../assets/logo.svg" type="image/x-icon" />
-    <link rel="stylesheet" href="./style.css" />
     <link rel="stylesheet" href="../navbar.css" />
+    <link rel="stylesheet" href="./style.css" />
     <title>Admin - Gerência</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-    <script src="../navbar.js"></script>
     <script src="../navbar.js"></script>
   </head>
   <body>
@@ -28,8 +27,25 @@
       </nav>
     </header>
     <main class="main">
-      <section class="main-section"></section>
+      <section class="main-section">
+        <div class="form-wrapper">
+          <h1 class="title">Adicionar turma</h1>
+          <form class="turmas-form">
+            <div class="turmas"></div>
+            <button type="submit" class="submit-btn">Enviar</button>
+          </form>
+        </div>
+        <div class="form-wrapper">
+          <h1 class="title">Adicionar categoria</h1>
+          <form class="categorias-form">
+            <div class="categorias"></div>
+            <button type="submit" class="submit-btn">Enviar</button>
+          </form>
+        </div>
+      </section>
     </main>
   </body>
   <script src="./index.js"></script>
+  <script src="./renderAddTurma.js"></script>
+  <script src="./renderAddCategoria.js"></script>
 </html>

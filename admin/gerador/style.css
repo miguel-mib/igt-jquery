@@ -1,0 +1,84 @@
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3rem;
+}
+
+.controls {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  border: 1px #d1d1d1 solid;
+  border-radius: 0.9375rem;
+  width: 20rem;
+  height: 5rem;
+}
+
+.controls input {
+  padding: 0 0.5rem;
+  height: 2.0625rem;
+  width: 6.875rem;
+  border-radius: 0.3125rem;
+  outline: none;
+  border: 0.0625rem solid #d1d1d1;
+  background-color: #e7e7e7;
+}
+.controls input::-webkit-input-placeholder {
+  color: #b8b8b8;
+  font-weight: 600;
+  transition: 300ms;
+}
+
+.controls button {
+  font-weight: 600;
+  background: #7d2cde;
+  color: #ffffff;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  border-radius: 1.25rem;
+  padding: 0.75rem 0;
+  width: 7.5rem;
+}
+
+.voucher-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  background: linear-gradient(to left, #a55ffc, #7d2cde);
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+
+  font-weight: 700;
+  font-size: 30px;
+  text-align: center;
+}
+
+.voucher-list ul {
+  list-style-type: none;
+  display: grid;
+  place-items: center;
+  grid-template-columns: repeat(5, 2fr);
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
+}
+
+@media (max-width: 800px) {
+  .voucher-list ul {
+    grid-template-columns: repeat(4, 2fr);
+  }
+}
+
+@media (max-width: 500px) {
+  .voucher-list ul {
+    grid-template-columns: repeat(3, 2fr);
+  }
+}

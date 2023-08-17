@@ -2,11 +2,17 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" href="../../assets/logo.svg" type="image/x-icon" />
-    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="shortcut icon"
+      href="../../assets/logo.svg"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="./style.css" />
     <link rel="stylesheet" href="../navbar.css" />
     <title>Gerador</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <!-- <script src="../../voucher-code-generator-js-master/voucher_codes.js"></script> -->
+    <script src="./voucher_codes.js"></script>
     <script src="../navbar.js"></script>
   </head>
   <body>
@@ -27,7 +33,24 @@
       </nav>
     </header>
     <main class="main">
-      <section class="main-section"></section>
+      <section class="main-section">
+        <form class="voucher-form">
+          <div class="controls">
+            <input
+              type="number"
+              name="qnt"
+              min="1"
+              id="qnt"
+              placeholder="Quantidade"
+            />
+            <button type="submit">Gerar vouchers</button>
+          </div>
+          <div class="voucher-list">
+            <h1 class="title">Vouchers</h1>
+            <ul></ul>
+          </div>
+        </form>
+      </section>
     </main>
   </body>
   <script src="./index.js"></script>

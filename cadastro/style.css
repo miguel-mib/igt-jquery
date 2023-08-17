@@ -278,6 +278,7 @@ body::-webkit-scrollbar {
   margin: 0.2rem auto 0.2rem;
   color: #c23434;
 }
+
 .erro.show {
   display: block;
 }
