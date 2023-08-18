@@ -1,6 +1,10 @@
 $(document).ready(function () {
-  $(".hamb-bg").click(function() {
-    $(".hamb").toggleClass("ativo")
-    $(".nav").toggleClass("ativo")
-  })
+  const toggleNav = () => {
+    $(".hamb").toggleClass("ativo");
+    $(".nav").toggleClass("ativo");
+    $(".main").attr("tabindex", (_, tabindex) => (tabindex == 0 ? null : 0));
+  };
+
+  $(".hamb-bg").click(toggleNav);
+  $(".main").focus(toggleNav);
 });
