@@ -5,7 +5,7 @@ $(document).ready(function () {
     const $vouchersUl = $("ul");
     $vouchersUl.empty();
     const vouchers = voucher_codes.generate({
-      length: 8,
+      length: 6,
       count: qnt,
     });
 

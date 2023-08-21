@@ -1,7 +1,7 @@
 $(document).ready(function () {
   const nomePattern = /^.{4,}$/;
   const telPattern = /^\d{10,}$/;
-  const turmaPattern = (value) =>
+  const turmaPattern = value =>
     [0, 1, 2, 3, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17].includes(
       parseInt(value)
     );
@@ -13,7 +13,7 @@ $(document).ready(function () {
     const integrantesParent = $(".integrantes");
     integrantesParent.empty();
 
-    integrantes.forEach((integranteWrapper) => {
+    integrantes.forEach(integranteWrapper => {
       integranteWrapper.find(".buttons__wrapper .add-btn").remove();
     });
 
@@ -21,20 +21,20 @@ $(document).ready(function () {
       const eUltimo = index === integrantes.length - 1;
 
       integranteWrapper
-        .find('input[name="integrante-nome-input"]')
-        .attr("name", `integrante-[${index}]`)
+        .find('input[name*="integrante-nome-input"]')
+        .attr("name", `integrante-nome-input-[${index}]`)
         .on("blur", nomeOnBlurHandle)
         .on("input", nomeOnInputHandle);
 
       integranteWrapper
-        .find('input[name="integrante-tel-input"]')
-        .attr("name", `integrante-[${index}]`)
+        .find('input[name*="integrante-tel-input"]')
+        .attr("name", `integrante-tel-input-[${index}]`)
         .on("blur", telOnBlurHandle)
         .on("input", telOnInputHandle);
 
       integranteWrapper
-        .find('select[name="integrante-turma"]')
-        .attr("name", `integrante-[${index}]`)
+        .find('select[name*="integrante-turma"]')
+        .attr("name", `integrante-turma-[${index}]`)
         .on("blur", turmaOnBlurHadle)
         .on("change", turmaOnChangeHadle);
 

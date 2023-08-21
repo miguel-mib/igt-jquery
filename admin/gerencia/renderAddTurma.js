@@ -6,15 +6,20 @@ $(document).ready(function () {
     const turmasParent = $(".turmas");
     turmasParent.empty();
 
-    turmas.forEach((turmaWrapper) => {
+    turmas.forEach(turmaWrapper => {
       turmaWrapper.find(".add-btn").remove();
     });
+    
 
     turmas.forEach((turmaWrapper, index) => {
       const eUltimo = index === turmas.length - 1;
 
       const $input = turmaWrapper.find("input");
       $input.on("blur", onBlurHandle);
+      $input.attr("name", `turma-input-[${index}]`);
+
+      const $select = turmaWrapper.find("select");
+      $select.attr("name", `categoria-select-[${index}]`);
 
       const $botaoDelete = turmaWrapper.find(".delete-btn");
       $botaoDelete.on("click", () => {
@@ -57,9 +62,27 @@ $(document).ready(function () {
     const $input = $("<input>")
       .attr("type", "text")
       .attr("placeholder", "Turma")
-      .attr("name", "turma-input")
       .on("blur", onBlurHandle)
       .addClass("form-input");
+
+    const $select = $("<select></select>");
+
+    $("<option>", {
+      value: "",
+      disabled: "disabled",
+      hidden: "hidden",
+      selected: "selected",
+      text: "Curso",
+    }).appendTo($select);
+
+    const cursos = ["TIPI", "ADM", "EDF", "MA"];
+
+    $.each(cursos, function (index, value) {
+      $("<option>", {
+        value: index,
+        text: value,
+      }).appendTo($select);
+    });
 
     const $botaoDelete = $("<button>")
       .attr("type", "button")
@@ -75,7 +98,7 @@ $(document).ready(function () {
 
     const $turmaWrapper = $("<div></div>")
       .addClass("turma-wrapper")
-      .append($input, $botaoDelete);
+      .append($input, $select, $botaoDelete);
 
     turmas.push($turmaWrapper);
     renderTurmas();

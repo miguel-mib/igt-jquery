@@ -15,6 +15,7 @@ $(document).ready(function () {
 
       const $input = categoriaWrapper.find("input");
       $input.on("blur", onBlurHandle);
+      $input.attr("name", `categoria-input-[${index}]`)
 
       const $botaoDelete = categoriaWrapper.find(".delete-btn");
       $botaoDelete.on("click", () => {
@@ -57,7 +58,6 @@ $(document).ready(function () {
     const $input = $("<input>")
       .attr("type", "text")
       .attr("placeholder", "Categoria")
-      .attr("name", "categoria-input")
       .on("blur", onBlurHandle)
       .addClass("form-input");
 
